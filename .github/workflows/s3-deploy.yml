@@ -32,6 +32,6 @@ jobs:
       with:
         tf_actions_version: 0.13.3
         tf_actions_subcommand: 'apply'
-    - uses: chrislennon/action-aws-cli@v1.1
+    - uses: iam_user_ug/action-aws-cli@v1.1
     - name: sync to s3
       run: aws s3 sync public s3://gatsby-bucket-rtg

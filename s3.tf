@@ -15,7 +15,7 @@ resource "aws_s3_bucket" "buckettzz" {
   acl    = "public-read"
 
   policy = <<POLICY
-    {
+{
       "Version": "2012-10-17",
       "Statement": [
         {

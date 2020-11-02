@@ -33,3 +33,7 @@ resource "aws_s3_bucket" "buckettzz" {
     index_document = "index.html"
   }
 }
+
+output "website" {
+  value = "http://${aws_s3_bucket.buckettzz.website_endpoint}"
+}

@@ -4,7 +4,7 @@ provider "aws" {
 
 terraform {
   backend "s3" {
-    bucket = "my-terraform-state-bucket"
+    bucket = "rtg-gatsby-terraform-bucket"
     key    = "gatsby-bucket-rtg.tfstate"
     region = "us-east-2"
   }

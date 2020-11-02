@@ -32,6 +32,6 @@ jobs:
       with:
         tf_actions_version: 0.13.3
         tf_actions_subcommand: 'apply'
-    - uses: iam_user_ug/action-aws-cli@v1.1
+    - uses: Ugochez/rtg-devops-takehome
     - name: sync to S3
       run: aws s3 sync public s3://gatsby-bucket-rtg

@@ -32,6 +32,6 @@ jobs:
       with:
         tf_actions_version: 0.13.3
         tf_actions_subcommand: 'apply'
-    - uses: Ugochez/rtg-devops-takehome
+    - uses: docker://amazon/aws-cli:2.0.7
     - name: sync to S3
       run: aws s3 sync public s3://gatsby-bucket-rtg

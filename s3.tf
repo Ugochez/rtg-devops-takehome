@@ -10,6 +10,7 @@ terraform {
   }
 }
 
+
 resource "aws_s3_bucket" "buckettzz" {
   bucket = "gatsby-bucket-rtg"
   acl    = "public-read"
